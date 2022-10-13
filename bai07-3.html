@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page</title>
+    <style>
+      .chelsea {
+        background-image: url(background-chelsea.jpg);
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        /* aspect-ratio: 16/9; */
+      }
+       @keyframes left {
+        from {
+            opacity: 0;
+            transform: translateX(-380px);
+            
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+            
+        }
+      }
+      @keyframes right {
+        from {
+            visibility: visible;
+            opacity: 0;
+            transform: translateX(320px);
+            
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);  
+            visibility: visible;
+        }
+      }
+      @keyframes bottom {
+        from {
+            visibility: visible;
+            opacity: 0;
+            transform: translateY(72px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(-25%);  
+            visibility: visible;
+        }
+      }
+      @keyframes blink {
+        from {
+            visibility: hidden;
+            opacity: 0;
+        }
+        to {
+            visibility: visible;
+            opacity: 1;
+        }
+      } 
+      .name-club {
+        font-size: 64px;
+        color: white;
+        font-weight: 700;
+        text-align: center;
+        font-family: tahoma;
+        padding-top: 100px;
+        text-shadow: 7px 7px 30px yellow;
+        letter-spacing: 9px;
+        animation: left 5s;
+        animation-fill-mode: forwards;
+        
+      }
+      .respect {
+        visibility: hidden;
+        font-size: 38px;
+        color: red;
+        font-weight: 700;
+        font-family: tahoma;
+        text-align: center;
+        padding-top: 50px;
+        text-shadow: 3px 3px 10px white;
+        letter-spacing: 20px;
+        animation: right 5s;
+        animation-fill-mode: forwards;
+        animation-delay: 5s;
+      }
+      .coach {
+        display: flex;
+        font-size: 60px;
+        color: blue;
+        visibility: hidden;
+        font-weight: 500;
+        justify-content: center;
+        margin-top: 500px;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        animation: bottom 5s;
+        animation-fill-mode: forwards;
+        animation-delay: 10s;
+      }
+      .manager{
+        border: 1px solid white;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 30px;
+        background-color: aqua;
+        text-shadow: 2px 2px 20px yellow;
+        letter-spacing: 10px;
+        
+      }
+      .thomas {
+        position: relative;
+        left: 1200px;
+        top: -432px;
+        animation: blink 4s;
+        visibility: hidden;
+        animation-delay: 7s;
+        animation-iteration-count: 2;
+        animation-fill-mode: forwards;
+      }
+      .thomas-2{
+        position: relative;
+        left: -1300px;
+        top: -1058px;
+        transform: rotateY(180deg);
+        animation: blink 4s;
+        visibility: hidden;
+        animation-delay: 9s;
+        animation-iteration-count: 2;
+        animation-fill-mode: forwards;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="chelsea">
+      <div class="name-club">CHELSEA FOOTBALL CLUB</div>
+      <div class="respect">WE ALWAYS REMEMBER YOU</div>
+      <div class="coach"> <span class="manager">THOMAS TUCHEL</div></span>
+      <div class="thomas">
+        <img src="thomas-tuchel-2.png" alt="tuchel" width="320px" />
+      </div>
+      <div class="thomas-2"> <img src="thomas-tuchel-5.png" alt="thomas" width="280px"></div>
+    </div>
+  </body>
+</html>

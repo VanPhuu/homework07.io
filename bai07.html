@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      /* css - homework1 */
+      @keyframes pulse-white {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(0.95);
+          box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+        }
+        100% {
+          transform: scale(1.1);
+          box-shadow: 0 0 0 30px rgba(255, 255, 255, 0);
+        }
+      }
+      @keyframes pulse-red {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(0.95);
+          box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.5);
+        }
+        100% {
+          transform: scale(1.1);
+          box-shadow: 0 0 0 30px rgba(255, 0, 0, 0);
+        }
+      }
+      @keyframes pulse-orange {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(0.95);
+          box-shadow: 0 0 0 0 rgba(255, 165, 0, 0.5);
+        }
+        100% {
+          transform: scale(1.1);
+          box-shadow: 0 0 0 30px rgba(255, 165, 0, 0);
+        }
+      }
+      @keyframes pulse-yellow {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(0.95);
+          box-shadow: 0 0 0 0 rgba(255, 255, 0, 0.5);
+        }
+        100% {
+          transform: scale(1.1);
+          box-shadow: 0 0 0 30px rgba(255, 255, 0, 0);
+        }
+      }
+      @keyframes pulse-blue {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(0.95);
+          box-shadow: 0 0 0 0 rgba(0, 0, 255, 0.5);
+        }
+        100% {
+          transform: scale(1.1);
+          box-shadow: 0 0 0 30px rgba(0, 0, 255, 0);
+        }
+      }
+      @keyframes pulse-green {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(0.95);
+          box-shadow: 0 0 0 0 rgba(0, 128, 0, 0.5);
+        }
+        100% {
+          transform: scale(1.1);
+          box-shadow: 0 0 0 30px rgba(0, 128, 0, 0);
+        }
+      }
+      @keyframes pulse-purple {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(0.95);
+          box-shadow: 0 0 0 0 rgba(128, 0, 128, 0.5);
+        }
+        100% {
+          transform: scale(1.1);
+          box-shadow: 0 0 0 30px rgba(128, 0, 128, 0);
+        }
+      }
+      @keyframes pulse-black {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(0.95);
+          box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
+        }
+        100% {
+          transform: scale(1.1);
+          box-shadow: 0 0 0 30px rgba(0, 0, 0, 0);
+        }
+      }
+
+      .dot div {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+      }
+      .dot {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 30px;
+      }
+      .white {
+        background-color: white;
+        animation: pulse-white 2s;
+        animation-iteration-count: infinite;
+      }
+      .red {
+        background-color: red;
+        animation: pulse-red 2s;
+        animation-iteration-count: infinite;
+      }
+      .orange {
+        background-color: rgb(255, 165, 0);
+        animation: pulse-orange 2s;
+        animation-iteration-count: infinite;
+      }
+      .yellow {
+        background-color: yellow;
+        animation: pulse-yellow 2s;
+        animation-iteration-count: infinite;
+      }
+      .blue {
+        background-color: blue;
+        animation: pulse-blue 2s;
+        animation-iteration-count: infinite;
+      }
+      .green {
+        background-color: green;
+        animation: pulse-green 2s;
+        animation-iteration-count: infinite;
+      }
+
+      .purple {
+        background-color: purple;
+        animation: pulse-purple 2s;
+        animation-iteration-count: infinite;
+      }
+      .black {
+        background-color: black;
+        animation: pulse-black 2s;
+        animation-iteration-count: infinite;
+      }
+      .name-pulse {
+        font-size: 64px;
+        font-weight: 700;
+        text-align: center;
+        font-family: sans-serif;
+      }
+      .homework-1 {
+        background-color: antiquewhite;
+        height: 200px;
+      }
+      /* css - homework-2 */
+      .heart {
+        text-align: center;
+        animation: heartbeat 0.7s;
+        animation-iteration-count: infinite;
+        padding-top: 50px;
+      }
+      @keyframes heartbeat {
+        from {
+          transform: scale(1.2);
+        }
+        to {
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="total">
+      <div class="homework-1">
+        <div class="name-pulse">CSS Pulse Effect</div>
+        <div class="dot">
+          <div class="white"></div>
+          <div class="red"></div>
+          <div class="orange"></div>
+          <div class="yellow"></div>
+          <div class="blue"></div>
+          <div class="green"></div>
+          <div class="purple"></div>
+          <div class="black"></div>
+        </div>
+      </div>
+      <div class="homework-2">
+        <div class="heart"><img src="heart.png" alt="" width="20%" /></div>
+      </div>
+      <div class="homework-3"></div>
+    </div>
+  </body>
+</html>
